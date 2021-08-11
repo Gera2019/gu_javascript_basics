@@ -1,1 +1,1 @@
-# gu_javascript_basics
+# Основы языка JavaScript
