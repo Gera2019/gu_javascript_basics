@@ -1,5 +1,5 @@
 // объявляем прототип Товар, на основе которого будем генерить товары
-function Good (name, price, quantity, description = '') { 
+function Good (name, price, description = '') { 
 	this.name = name;
 	this.price = price;
 	this.description = description;
@@ -46,10 +46,10 @@ Basket.prototype.countBasketPrice = function countBasketPrice () {
 
 // Проверка
 // Создаем некоторые товары
-var good1 = new Good('Good1', 100, 2);
-var good2 = new Good('Good2', 300, 1, 'Bla-bla-bla');
-var good3 = new Good('Good3', 1500, 1, 'Bu-bu-bu');
-var good4 = new Good('Good4', 450, 10, 'Gagaga')
+var good1 = new Good('Good1', 100);
+var good2 = new Good('Good2', 300, 'Bla-bla-bla');
+var good3 = new Good('Good3', 1500, 'Bu-bu-bu');
+var good4 = new Good('Good4', 450, 'Gagaga')
 
 // Формируем корзину с нужными товарыми
 var basket1 = new Basket();
